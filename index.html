@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="./js/trajets.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>BusDirect - Trajects</title>
+</head>
+<body class="bg-gray-100">
+<header class="en-tete">
+      
+   <img class="logo" src="imgs/logo.png">  
+   <a class="tete-left"></a>
+   <nav>
+   <ul class="menu">
+   <a class="tete-right" href="index.html">Trajects</a>
+   <a class="tete-right" href="cabine.html">réservation</a>
+   </ul>
+ </nav>
+</header>
+    
+<main>
+  
+<section class="titleMain"> 
+
+   <h1 id="hTitel" class="text-xl font-bold mb-1" >Gestion des trajets</h1>  
+   <p id="pTiltel">Consultez et gérez les réservation de BusDirect.</p> 
+
+</section>  
+
+  <section class="bus-info" >
+     <div class="bus-container">
+        <div class="card" style="grid-area: box-1"><img class="usertLogo" src="imgs/user.png">
+         <h3> Nombre de Passagers </h3>
+         <p id="totalePassengers">0</p>
+      </div>
+        <div class="card" style="grid-area: box-2"><img class="totaleLogo" src="imgs/Totale.png">
+          <h3>recentte totale</h3>
+          <p id="totaleRecettes">0</p>
+         </div>
+        <div class="card" style="grid-area: box-3"><img class="trajetLogo" src="imgs/Trajet.png">
+          <h3>les trajet complet</h3>
+          <p id="totaleTrajets">20</p>
+         </div>   
+     </div>
+  </section>
+
+  <section class="organized">
+   
+    <input type="text" id="searshBus" placeholder="Search by departure or destination">
+
+    <select id="selectTrajet" required>
+
+      <option value="">Tous les trajets</option>
+      <option value="available">Disponibles</option>
+      <option value="full">Complets</option>
+
+   </select>   
+   </form>
+
+  </section>
+
+ <section class="listTrajets">
+
+<section class="trajetInfo" >
+     <div class="trajet-container" id="trajetContainer">
+
+     </div>
+  
+       
+        
+
+ </section>
+ <section class="pagination-container">
+   <div class="pagination">
+      <button class="btn1" ><img src="imgs/arrow.png"> prev</button>
+      <ul>
+         <li class="link active" value="1">1</li>
+         <li class="link" value="2">2</li>
+         <li class="link" value="3">3</li>
+         <li class="link" value="4">4</li>
+      </ul>
+      <button class="btn2">next <img src="imgs/arrow.png"> </button>
+   </div>
+ </section>
+
+
+</main>
+
+    <footer class="bg-slate-800 text-white rounded-lg mt-10 p-6">
+
+       <div class="flex flex-wrap justify-between gap-6">
+
+        <div>
+            <h2 class="text-xl font-bold"> BusDirect</h2>
+            <p class="text-gray-300 text-sm mt-2 ">
+                Gestion des trajets et des réservations.
+            </p>
+      <hr class="border-gray-600 my-5 ">
+
+       <p class="text-center text-gray-300 text-sm">
+        © 2026 BusDirect — Projet étudiant.
+       </p>
+        </div>
+
+    </footer>
+</body>
+</html>
+
+
+
+
+
